@@ -44,6 +44,12 @@ body,
     min-height: 150px;
 }
 
+.main-banner {
+	background-color: #ebedee;
+	text-align: center;
+	padding: 35px 15px;
+}
+
 .main-logo,
 .main-nav {
 	display: table-cell; /* changed to a table display method */
