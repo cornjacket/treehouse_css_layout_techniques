@@ -27,12 +27,12 @@ body,
 /* Layout Element Colors
 ==============================  */
 
-.main-header              { background-color: black; }
-.main-logo                { background-color: green; }
-.main-nav li              { background-color: blue; }
-.primary-content          { background-color: purple; }
-.secondary-content        { background-color: red; }
-.main-footer              { background-color: gray; }
+.main-header              { background-color: #384047; }
+.main-logo                { background-color: #5fcf80; }
+.main-nav li              { background-color: #3f8abf; }
+.primary-content          { background-color: #caebf6; }
+.secondary-content        { background-color: #bfe3d0; }
+.main-footer              { background-color: #b7c0c7; }
 
 /* Header, Banner and Footer Layout 
 =================================== */
