@@ -11,6 +11,11 @@ body {
 	width: 90%;
 	margin: auto;
 }
+
+* {
+	box-sizing: border-box; /* DRT nice solution for fixing over-flow of width due to padding calculation */
+}
+
 /* Layout Element Colors
 ==============================  */
 
@@ -26,6 +31,19 @@ body {
 
 .main-header {
 	padding: 20px; /* DRT - this is used to fix margin-collapsing bug that happens when body element is followed by element wth margin = 0 */
+    display: table;
+    width: 100%; /* required when using display: table; */
+    min-height: 150px;
+}
+
+.main-logo,
+.main-nav {
+	display: table-cell; /* changed to a table display method */
+	vertical-align: align;
+}
+
+.main-nav {
+	padding-left: 50px; /* cant use margins when using table display */
 }
 
 .main-logo,
@@ -35,7 +53,7 @@ body {
 }
 
 .main-nav li {
-	margin-top:   15px;
+
     margin-right: 15px;  
 }
 
@@ -45,17 +63,31 @@ body {
 }
 
 .main-logo {
-	margin-top: 0;
-	margin-bottom: 0;
-	margin-right: 50px;
+
 	width: 120px;
 }
-
+ 
 .main-logo a,
 .main-nav a {
 	color: white;
 	text-decoration: none;
-	display: block;
+	display: block; /* anchors can be block because they are inside inline-block elements, ie li's. No visual difference if set to block */
 	text-align: center;
     padding: 10px 20px; /* putting padding here instead of on li items makes large buttons that are clickable */
+}
+
+@media (max-width: 768px) {
+	.main-logo,
+	.main-nav,
+	.main-nav li {
+		display: block;
+		width: initial;
+		margin: initial;
+	}
+	.main-nav {
+		padding-left: initial;
+	}
+	.main-nav li {
+		margin-top: 15px;
+	}
 }
