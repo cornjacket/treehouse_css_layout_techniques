@@ -25,7 +25,23 @@ body {
 =================================== */
 
 .main-header {
-	/*padding: 20px; /* DRT - this is used to fix margin-collapsing bug that happens when body element is followed by element wth margin = 0 */
+	padding: 20px; /* DRT - this is used to fix margin-collapsing bug that happens when body element is followed by element wth margin = 0 */
+}
+
+.main-logo,
+.main-nav,
+.main-nav li {
+	display: inline;
+}
+
+.main-logo,
+.main-nav li {
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+
+.main-logo {
+	margin-right: 50px;
 }
 
 .main-logo a,
