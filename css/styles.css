@@ -7,10 +7,18 @@ body {
 	background-color: #edeff0;
 }
 
-.main-wrapper {
+html,
+body,
+.main-wrapper,
+.col {
+	height: 100%;
+}
+
+/* uncomment to have a container, comment for full page */
+/*.main-wrapper {
 	width: 90%;
 	margin: auto;
-}
+}*/
 
 * {
 	box-sizing: border-box; /* DRT nice solution for fixing over-flow of width due to padding calculation */
@@ -74,6 +82,11 @@ body {
 	display: block; /* anchors can be block because they are inside inline-block elements, ie li's. No visual difference if set to block */
 	text-align: center;
     padding: 10px 20px; /* putting padding here instead of on li items makes large buttons that are clickable */
+}
+
+.main-footer {
+	text-align: center;
+	padding: 20px;
 }
 
 /* Column Layout
