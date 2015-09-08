@@ -119,9 +119,11 @@ body,
 @media (max-width: 768px) {
 	.main-logo,
 	.main-nav,
-	.main-nav li {
+	.main-nav li,
+	.col {
 		display: block;
 		width: initial;
+		height: initial; /* added for col class */
 		margin: initial;
 	}
 	.main-nav {
@@ -129,5 +131,8 @@ body,
 	}
 	.main-nav li {
 		margin-top: 15px;
+	}
+	.main-banner {
+		display: none; /* hide banner for small displays */
 	}
 }
