@@ -1,0 +1,27 @@
+/* Page styles 
+============================= */
+
+body {
+	font: normal 1.1em/1.5 sans-serif;
+	color: #222;
+	background-color: #edeff0;
+}
+
+/* Layout Element Colors
+==============================  */
+
+.main-header              { background-color: #384047; }
+.main-logo                { background-color: #5fcf80; }
+.main-nav li              { background-color: #3f8abf; }
+.primary-content          { background-color: #caebf6; }
+.secondary-content        { background-color: #bfe3d0; }
+.main-footer              { background-color: #b7c0c7; }
+
+/* Header, Banner and Footer Layout 
+=================================== */
+
+.main-logo a,
+.main-nav a {
+	color: white;
+	text-decoration: none;
+}
