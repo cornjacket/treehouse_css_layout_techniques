@@ -76,6 +76,27 @@ body {
     padding: 10px 20px; /* putting padding here instead of on li items makes large buttons that are clickable */
 }
 
+/* Column Layout
+================================ */
+
+.col {
+	display: inline-block;
+	padding: 20px;
+	margin-right: -5px; /* DRT - fix for extra white space added */
+	vertical-align: top; /* brings column up */
+}
+
+.primary-content {
+	width: 60%;
+}
+
+.secondary-content {
+	width: 40%;
+}
+
+/* Media Queries
+================================ */
+
 @media (max-width: 768px) {
 	.main-logo,
 	.main-nav,
